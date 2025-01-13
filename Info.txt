@@ -76,3 +76,14 @@ TODO: 1.find target in an array and return index else -1
       let & const are block scope
       var is function scope
       
+6.Default parameters
+      function addTwo(a, b=0){
+            return a + b;
+      }
+
+7.Rest parameters
+      function myFunc(a,b,...c){
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`c is`, c);
+      }
