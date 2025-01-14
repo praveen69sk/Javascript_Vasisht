@@ -171,4 +171,39 @@ Very Important Array Methods
 
             //numbers.slice(0).sort((a,b)=>{a-b}); //if we dont want existing array altering
 
-6.find()
+6.find() --> finds the match and returns that value
+
+            const animals = ["doggy", "cat", "elephant"];
+
+            const animal = animals.find((animal)=>{animal.length === 3});
+            console.log(animal);// o/p is 'cat' here
+
+7.every() --> returns true / false, applies the condition for every element
+
+             const numbers = [2,4,6,8,10];
+             const ans = numbers.every((number)=>{ number % 2 === 0});     
+             console.log(ans);
+
+8.some() --> return true / false, if it finds 1st condition it returns true
+            For ex: if any of the cart item value is greater than 1lakh then  it's true
+            
+             const numbers = [3,5,11,9]; //kya ek bhi number evebn hai?
+             const ans = numbers.some((number)=>{ number % 2 === 0});     
+             console.log(ans); // returns false
+
+9.fill() --> value, start, end
+             const myArray = new Array(10).fill(-1);
+             console.log(myArray);
+
+             const array2 = [1,2,3,4,5,6,7,8,9];
+             array2.fill(0, 2, 5);
+             console.log(array2);
+
+10.splice() --> start, delete, insert
+             const myArray = ['item1', 'item2', 'item3'];
+             //delete
+             myArray.splice(1, 1);
+             //insert
+             myArray.splice(1, 0, 'inserted item');
+             //delete and insert
+             myArray.splice(1, 2, 'inserted item1', 'inserted item2');
