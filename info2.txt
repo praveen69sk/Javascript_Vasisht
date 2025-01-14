@@ -1,0 +1,11 @@
+iterables
+    jispe hum for of loop laga sakte hey
+    for ex: string, array are iterable
+
+Sets (It is iterable)
+    a.store data
+    b.sets aso have its own methods
+    c.No index-based access
+    d.Order is not guaranteed
+    e.unique items only
+
