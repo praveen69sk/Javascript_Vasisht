@@ -9,3 +9,6 @@ Sets (It is iterable)
     d.Order is not guaranteed
     e.unique items only
 
+=============================================
+Maps
+    
