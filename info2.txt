@@ -2,13 +2,30 @@ iterables
     jispe hum for of loop laga sakte hey
     for ex: string, array are iterable
 
+Note: Object is not iterable, so we can use only for in loop to get the keys
+
 Sets (It is iterable)
     a.store data
-    b.sets aso have its own methods
+    b.sets al so have its own methods
     c.No index-based access
     d.Order is not guaranteed
     e.unique items only
 
 =============================================
-Maps
-    
+Maps (It is iterable)
+
+=============================================
+Object cloning:
+ obj1 = {
+    name: 'Praveen',
+    age: 36
+ }
+
+ obj2 = {...obj1}; //using spread operator, it's new in JS
+
+obj2 = Object.assign({}, obj1); //it's old way
+
+==============================================
+optional chaining:
+
+    console.log(user?.addess?.houseNumber);
