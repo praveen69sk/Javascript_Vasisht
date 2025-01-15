@@ -1,1 +1,41 @@
 Object oriented Javascript / prototypal inheritance
+
+1. Methods --> function inside object
+
+    function personInfo(){
+        console.log(`${this.firstName}`)
+    }
+
+    const person = {
+        firstName: "Praveen",
+        about: personInfo
+    }
+
+    person.about();
+
+=====================================================
+1.call() --> Borrowing method from one object into another Object
+
+      scenario 1: user1.about.call(user2); //without params
+                  user1.about.call(user2, param1. param2); //with params
+
+      scenario 2: --> If we define function outside the object
+                  about.call(user1); 
+                  about.call(user2);
+=====================================================
+2.apply() --> Here only difference as compared to call() is here we pass params as array
+
+                  about.apply(user1, [param1, param2]);
+=====================================================
+3.bind() --> it returns function
+                  const func = about.bind(user1, param1, param2);
+                  func();
+=====================================================
+don't do these mistakes (dont just assign object's function to variable)
+              const func = user1.about; // it's wrong
+              func();
+
+              //Correct way
+              const func = user1.about.bind(user1);
+              func();
+=====================================================
