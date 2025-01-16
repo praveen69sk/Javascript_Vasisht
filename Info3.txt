@@ -90,5 +90,5 @@ note: __proto__  & [[prototype]] --> both are same
 
         const user1 = new CreateUser("Praveen");
 
-  Note: a. create animal and dog class use extend, super, method overriding
+  Note: create animal and dog class use extend, super, method overriding
 =====================================================
