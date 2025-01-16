@@ -39,3 +39,56 @@ don't do these mistakes (dont just assign object's function to variable)
               const func = user1.about.bind(user1);
               func();
 =====================================================
+4.arrow functions --> Here it will take this from one level up, means from surroundings
+Note: here this keyword refers to window object
+=====================================================
+5.Prototype chaining:
+One more way to create empty object
+  const obj1 = {
+    key1:"value1",
+    key2:"value2"
+  }
+
+  const obj2 = Object.create(obj1);
+
+note: __proto__  & [[prototype]] --> both are same
+      __proto__ (esko dunder bhi bolte hey, kyunki ye ek property hey)
+      prototype is different
+
+=====================================================
+6.prototype ===> Only functions provide prototype property
+            for ex: constructor is also an function
+
+            //const numbers = [1,2,3,4];
+
+              const numbers = new Array(1,2,3,4); // internally Object.create() will do the  prototype chaining
+              console.log(numbers);
+
+              console.log(Object.getPrototypeOf(numbers));
+              console.log(Array.prototype);
+=====================================================
+7.new keyword
+
+        //constructor
+        function CreateUser(firstName){
+            this.firstName = firstName;
+        }
+
+        const user1 = new CreateUser("Praveen");
+=====================================================
+8.class keyword
+        class CreateUser {
+              
+              constructor(firstName){
+                this.firstName = firstName;
+              }
+
+              about(){
+                return `${this.firstName}`;
+              }
+        }
+
+        const user1 = new CreateUser("Praveen");
+
+  Note: a. create animal and dog class use extend, super, method overriding
+=====================================================
