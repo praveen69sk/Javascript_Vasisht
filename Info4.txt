@@ -1,0 +1,3 @@
+HOW JS WORKS.....
+=================
+1.Closures: Inner function apni outer function ka local memory ko leke hi return hoga

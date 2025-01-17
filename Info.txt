@@ -1,0 +1,211 @@
+Lecture 3:
+
+push/pop, unshift/shift
+
+1.How to clone array
+      spread operator [...arr]
+2.How to concatenate two arrays 
+
+3.for loop in array
+4.Use const for creating array
+
+5.while loop in array
+6.for of loop in array
+7.for in loop in array
+
+8.array destructuring 
+        let myArray = ['val1', 'val2'];
+        let [myVal1, myVal2] = myArray; 
+==========================================
+
+Objects:
+
+1.Create objects, access properties, how to add key value pair
+
+      dot notation and bracket notation
+      difference between dot notation and bracket notation
+
+2.How to iterate objects
+      for in loop
+      Object.keys
+
+3.Computed properties
+4.Spread operator in objects
+5.Object destructuring
+    let {bandName:var1, famousSong:var2} = band;
+    hint: For creating a new object for rest of the properties
+    let {bandName, famousSong, ...restProps} = band;
+
+6.Objects inside array
+7.Nested destructuring
+      const [user1, user2] = users;
+      const [{firstName:customName},{gender}] = users;
+
+================================================
+
+Functions:
+
+1.Function declaration
+      function hello(){
+            console.log('Hi how are you');
+      }
+
+TODO: 1.find target in an array and return index else -1
+      2.write function with parameters
+*************************************************
+2.Function expression
+      const hello = function(){
+            console.log('Hi how are you');
+      }
+
+*************************************************
+3.Arrow function
+      const hello =()=>{
+            console.log('Hi how are you');
+      }
+
+*************************************************
+4.Hoisting
+ Hint: a. only function declarations can be hoisted, but not function expression and arrow functions.
+       b. only var variables can be hoisted.but not the let and const variables
+
+4.1 Functions inside function
+4.2 Lexical scope
+**************************************************
+5.block scope vs function scope
+      let & const are block scope
+      var is function scope
+      
+6.Default parameters
+      function addTwo(a, b=0){
+            return a + b;
+      }
+
+7.Rest parameters
+      function myFunc(a,b,...c){
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`c is`, c);
+      }
+
+TODO: write a function for add all numbers
+
+8.Param destructuring
+  hint: Usually used with objects & in react as well
+
+            let person = {
+                  firstName: "Praveen",
+                  age:36
+            }
+
+            function printDetails({firstName, age}){
+                  console.log(firstName, age);
+            }
+
+9.callback functions
+10.function returning function
+      Q: What is higher order function?
+      Ans: Function accepting callback function or returning function or else doing both is called
+           Higher order function
+====================================================================================================
+****************************************************************************************************
+
+Very Important Array Methods
+// foreach / map / filter / reduce
+
+1.forEach()
+      const numbers = [1,2,3,4,5,6];
+
+      function myFunc(number, index){
+            console.log(number, index);
+      }
+
+      numbers.forEach(myFunc);
+
+2.map()
+--> Iterates over elements and returs a new array
+
+      const numbers = [1,2,3,4,5,6];
+
+      const square = function(number){
+            return number * number;
+      }
+
+      const squareNumber = numbers.map(square);
+      console.log(squareNumber); //it's a new array returned by map()
+
+3.filter() --> always returns boolean value
+--> Iterates over array and returns new array based on true/false condition
+
+      const numbers = [1,2,3,4,5,6];
+      
+      const evenNumbers = numbers.filter((number) => {
+            return number % 2 === 0; 
+      });
+
+      console.log(evenNumbers);
+
+4.reduce() --> reduces the array and returns one value
+            for ex: sum of all the products value in the cart
+
+            Note: we can pass initial value as well, it's optional
+
+            const numbers = [1,2,3,4,5,6];
+
+            const sum = numbers.reduce((accumulator, currentValue)=>{
+                  return accumulator + currentValue;
+            });
+
+            console.log(sum);
+
+5.sort() --> callback function is optional here
+            Note: it will alter the existing array
+
+            const numbers = [9,6,2,100,150,80];
+
+            //numbers.sort();
+
+            numbers.sort((a,b)=>{a-b});
+
+            console.log(numbers);
+
+            //numbers.slice(0).sort((a,b)=>{a-b}); //if we dont want existing array altering
+
+6.find() --> finds the match and returns that value
+
+            const animals = ["doggy", "cat", "elephant"];
+
+            const animal = animals.find((animal)=>{animal.length === 3});
+            console.log(animal);// o/p is 'cat' here
+
+7.every() --> returns true / false, applies the condition for every element
+
+             const numbers = [2,4,6,8,10];
+             const ans = numbers.every((number)=>{ number % 2 === 0});     
+             console.log(ans);
+
+8.some() --> return true / false, if it finds 1st condition it returns true
+            For ex: if any of the cart item value is greater than 1lakh then  it's true
+            
+             const numbers = [3,5,11,9]; //kya ek bhi number evebn hai?
+             const ans = numbers.some((number)=>{ number % 2 === 0});     
+             console.log(ans); // returns false
+
+9.fill() --> value, start, end
+             const myArray = new Array(10).fill(-1);
+             console.log(myArray);
+
+             const array2 = [1,2,3,4,5,6,7,8,9];
+             array2.fill(0, 2, 5);
+             console.log(array2);
+
+10.splice() --> start, delete, insert
+             const myArray = ['item1', 'item2', 'item3'];
+             //delete
+             myArray.splice(1, 1);
+             //insert
+             myArray.splice(1, 0, 'inserted item');
+             //delete and insert
+             myArray.splice(1, 2, 'inserted item1', 'inserted item2');
+====================================================================================================
+****************************************************************************************************
