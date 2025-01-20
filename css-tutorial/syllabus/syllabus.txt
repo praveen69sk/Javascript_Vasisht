@@ -1,0 +1,36 @@
+Hey Everyone this is introduction video of my complete HTML and CSS Course in Hindi. 
+In this course we will learn everything you need to know about HTML and CSS. 
+This course includes all modern topics such as flexbox, grids, sass. 
+
+Overall Content of this course is:
+
+    SETUP TOOLS
+    HTML
+    CSS BASICS
+    CSS POSITIONS AND FLOAT LAYOUT
+    CREATE  WEBSITE USING FLOAT 
+    RESPONSIVE WEB DESIGN
+    FLEXBOX
+    CREATE WEBSITE USING FLEXBOX
+    CSS ANIMATIONS
+    CSS GRID 
+    CREATE WEBSITE USING GRID
+    SASS
+    CREATE WEBSITE USING SASS
+    WEBSITE DEPLOYMENT
+    USE FIGMA TO CREATE UI DESIGNS
+    I hope you will enjoy this course.
+
+
+//Useful Softwares / Extensions:
+1.web developer extension for chrome
+
+
+// VS-Code extensions: 
+1. Live server for vs-code
+2. Bracket pair colorizer for vs-code
+3. Prettier code formatter
+
+//Shortcuts
+1. alt + shift + down arrow for copy paste
+2. cntrl + enter to enter to next line in writing html code
