@@ -1,0 +1,19 @@
+Margin Collapsing:
+-----------------
+1. For ex: in case of 2 boxes margin bottom  & margin top, highest margin will take the precedence.
+
+Inline element vs block level elemets:
+------------------------------
+1. Block level elements take the entire width while Inline elements takes only required width.
+2. For IE elements width and height doesn't work.
+                 & margin top/bottom doesn't work only left/right works.
+                 & padding also left/right works poperly not top/bottom.
+
+Img element:
+-----------
+1. Image element is also an inline element but it's different from other inline elements.
+
+Inline Block elements:
+---------------------
+1.With this we can control height/width/margin/padding in inline elements
+
