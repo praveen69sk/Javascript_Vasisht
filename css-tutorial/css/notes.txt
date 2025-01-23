@@ -17,3 +17,30 @@ Inline Block elements:
 ---------------------
 1.With this we can control height/width/margin/padding in inline elements
 
+Box Sizing:
+----------
+1.always best practice to use box-sizing property globally
+
+CSS reset:
+---------
+1. used to reset the default margin & padding provided by the browser.
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+CSS Inheritance:
+---------------
+1. child elemets takes the property values from it's parent
+
+Text Align Property:
+-------------------
+1.
+
+Font-size:
+---------
+1.Default font size is 16px we can customize this
+2.Default font-weight is 400(normal/regular) we can change this as well
+===================================================================================================
+
