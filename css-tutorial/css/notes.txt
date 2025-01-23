@@ -1,0 +1,81 @@
+Margin Collapsing:
+-----------------
+1. For ex: in case of 2 boxes margin bottom  & margin top, highest margin will take the precedence.
+
+Inline element vs block level elemets:
+------------------------------
+1. Block level elements take the entire width while Inline elements takes only required width.
+2. For IE elements width and height doesn't work.
+                 & margin top/bottom doesn't work only left/right works.
+                 & padding also left/right works poperly not top/bottom.
+
+Img element:
+-----------
+1. Image element is also an inline element but it's different from other inline elements.
+
+Inline Block elements:
+---------------------
+1.With this we can control height/width/margin/padding in inline elements
+
+Box Sizing:
+----------
+1.always best practice to use box-sizing property globally
+
+CSS reset:
+---------
+1. used to reset the default margin & padding provided by the browser.
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+CSS Inheritance:
+---------------
+1. child elemets takes the property values from it's parent
+
+Text Align Property:
+-------------------
+1.
+
+Font-size:
+---------
+1.Default font size is 16px we can customize this
+2.Default font-weight is 400(normal/regular) we can change this as well
+===================================================================================================
+
+CSS Units: 2 Types
+---------
+1. Absolute --> For Ex: px, in, pt, cm
+2. Relative --> For Ex: %, rem, em
+Note: refer rem-unit.png 
+      rem unit + % combination is important(if we change the default font size in browser then it works fine (responsive))
+      
+Note: For font size use 'rem' so that it will be helpful for responsive
+      but if we use 'px' then we need to write media query to make it responsive.
+      refer 'font-size.png'
+
+      :Preferred units/Best practices for units:
+      ------------------------------------------
+      font-size      --> rem
+      padding/margin --> em
+      layouts        --> %
+      for thin borders --> px
+******************************************************************************
+
+Viewport Units: (vh, vw, vmin, vmax)
+--------------
+1. vh/vw --> refers the viewport but not the parent and adjust accodingly.
+====================================================================================================
+
+CSS Positions: --> Static, Relative, Absolute, Fixed, Sticky, Z-index
+-------------
+1.
+
+====================================================================================================
+
+Layout:
+------
+1.Float
+2.Flexbox
+3.Grid
