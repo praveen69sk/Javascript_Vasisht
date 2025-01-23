@@ -44,3 +44,27 @@ Font-size:
 2.Default font-weight is 400(normal/regular) we can change this as well
 ===================================================================================================
 
+CSS Units: 2 Types
+---------
+1. Absolute --> For Ex: px, in, pt, cm
+2. Relative --> For Ex: %, rem, em
+Note: refer rem-unit.png 
+      rem unit + % combination is important(if we change the default font size in browser then it works fine (responsive))
+      
+Note: For font size use 'rem' so that it will be helpful for responsive
+      but if we use 'px' then we need to write media query to make it responsive.
+      refer 'font-size.png'
+
+      :Preferred units/Best practices for units:
+      ------------------------------------------
+      font-size      --> rem
+      padding/margin --> em
+      layouts        --> %
+      for thin borders --> px
+******************************************************************************
+
+Viewport Units: (vh, vw, vmin, vmax)
+--------------
+1. vh/vw --> refers the viewport but not the parent and adjust accodingly.
+====================================================================================================
+
