@@ -410,3 +410,9 @@ h1, h2, h3{
     display: block;
     clear: both;
 }
+
+.bottom-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
