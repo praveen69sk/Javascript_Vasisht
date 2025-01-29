@@ -411,8 +411,59 @@ h1, h2, h3{
     clear: both;
 }
 
-.bottom-footer{
+/* .bottom-footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+} */
+
+/* #################### Contact form styling #################### */
+.contact-form{
+    padding: 5rem 0;
+    background-color: #f4f4f4
+}
+
+.form-wrapper{
+    /* background-color: white; */
+}
+
+.company-address{
+    height: 760px;
+    background-color: white;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 48rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ######################## Form Styling ######################## */
+
+.form{
+    height: 760px;
+    background-color: white;
+    width: 49%;
+    float: right;
+    padding: 1rem;
 }
