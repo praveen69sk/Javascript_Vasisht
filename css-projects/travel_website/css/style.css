@@ -293,3 +293,120 @@ h1, h2, h3{
 }
 
 /* ######################### about page styling ##################### */
+.about{
+    padding: 5rem 0;
+}
+
+/* .about-heading{
+    border-bottom: 5px solid #f5576c;
+} */
+
+/* Using psuedo element */
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid #f5576c;
+    width: 100%;
+}
+
+.about p{
+    font-size: 1.5rem;
+}
+
+/* ################## about wrapper styling ################ */
+
+.about-list-wrap{
+    margin-top: 2rem;
+    text-align: center;
+}
+.about-list-wrap .list{
+    width: 50%;
+    float: left;
+}
+
+.about-list-wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-list-wrap li::before{
+    content: '\2713';
+    color: #f5576c;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+/* ################## counts wrapper styling ################ */
+.counts{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.counts .count-item{
+    width: 25%;
+    float: left;
+}
+
+.counts span{
+    color: #f5576c;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.counts p{
+    margin-top: 1rem;
+    color: #263238;
+    font-weight: 600;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ####################### About banner styling #################### */
+
+.cta-banner{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000057;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right{
+    width: 40%;
+    float:right;
+    text-align: right;
+}
+
+.cta-line{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.btn-cta{
+    color: #f4f4f4;
+    text-align: center;
+    display: inline-block;
+    border: 4px solid white;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5em;
+}
+
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
