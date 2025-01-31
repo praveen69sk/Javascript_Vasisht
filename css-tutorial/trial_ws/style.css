@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper{
+    border: 10px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* height: 600px; */
+    /* flex-direction: column-reverse;*/
+    /* flex-wrap: wrap; 
+    justify-content: center; */
+
+}
+
+.box{
+    border: 1px solid grey;
+    width: 500px;
+}
+
+.box1{
+    background: lightblue;
+}
+
+.box2{
+    background: lightcoral;
+}
+
+.box3{
+    background: lightcyan;
+}
+
+.box4{
+    background: lightgoldenrodyellow;
+}
+
+.box5{
+    background: lightgreen;
+}

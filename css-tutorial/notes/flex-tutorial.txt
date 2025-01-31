@@ -1,0 +1,30 @@
+Flexbox container:--> Parent will become container
+
+Flexbox Items : --> childs will become flex items
+
+          Note:--> Refer 'flex-terminology.png'
+
+==================================================
+Flex container Properties:
+-------------------------
+1.Flex-direction --> row/rowerverse, column/column-reverse
+
+2.Flex-wrap --> nowrap / wrap / wrap-reverse
+
+3.justify-content --> kam karta hey main axis pe 
+
+4.align-items --> kam karta hey cross axis pe
+
+5.align-content -->
+
+6.flex-flow --> it's short for Flex-direction + Flex-wrap
+
+=================================================
+Flex Items properties:
+---------------------
+1.align-self
+2.order
+3.flex-basis
+4.flex-grow
+5.flex-shrink
+6.flex --> flex-grow + flex-shrink + flex-basis
